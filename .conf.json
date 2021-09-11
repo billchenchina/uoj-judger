@@ -1,0 +1,8 @@
+{
+    "uoj_protocol": "UOJ_PROTOCOL",
+    "uoj_host": "UOJ_HOST",
+    "judger_name": "UOJ_JUDGER_NAME",
+    "judger_password": "UOJ_JUDGER_PASSWORD",
+    "socket_port": UOJ_SOCKET_PORT,
+    "socket_password": "UOJ_SOCKET_PASSWORD"
+}
