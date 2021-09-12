@@ -17,5 +17,6 @@ cd /opt/uoj/judger/uoj_judger/ && make -j$(($(nproc) + 1))
 
 COPY docker-entrypoint.sh /usr/local/bin
 WORKDIR /opt/uoj/judger/
+VOLUME /opt/uoj/judger/
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["/opt/uoj/judger/judge_client"]
