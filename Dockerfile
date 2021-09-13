@@ -6,7 +6,7 @@ COPY uoj_work_path.h /opt/uoj/judger/uoj_judger/include/
 COPY .conf.json /opt/uoj/judger/
 RUN \
 apt-get -y update && \
-apt-get -y install cmake fp-compiler python python3 python3-requests openjdk-8-jdk openjdk-11-jdk make g++ && \
+apt-get -y install cmake fp-compiler python python3 python3-requests openjdk-8-jdk openjdk-11-jdk make g++ unzip && \
 useradd -m local_main_judger && usermod -a -G www-data local_main_judger && \
 mkdir -p /var/uoj_data/upload && \
 chown -R www-data:www-data /var/uoj_data && \
